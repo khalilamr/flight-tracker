@@ -98,6 +98,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "flight-tracker:build:production",
+              "serveTarget": "flight-tracker:serve:production"
+            },
+            "development": {
+              "buildTarget": "flight-tracker:build:development",
+              "serveTarget": "flight-tracker:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

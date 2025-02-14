@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "flight-tracker-c2a45": {
+      "hosting": {
+        "flight-tracker": [
+          "flight-tracker-c2a45"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "flight-tracker-c2a45"
+  }
+}
