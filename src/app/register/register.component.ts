@@ -11,7 +11,6 @@ import { AuthService } from '../auth.service';
 export class RegisterComponent implements OnInit {
   router: any;
 
-
   constructor(private auth: AuthService, private fb: FormBuilder){}
   signinForm!: FormGroup;
 
@@ -23,11 +22,9 @@ export class RegisterComponent implements OnInit {
     });
   }
 
-
-
   onSubmit(){
     if(this.signinForm.valid){
-      this.auth.signIn(this.signinForm.value.email, this.signinForm.value.password);
+      this.auth.signIn(this.signinForm.value.email, this.signinForm.value.name, this.signinForm.value.password);
       this.signinForm.reset();
     }
   }

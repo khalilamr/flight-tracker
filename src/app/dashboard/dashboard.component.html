@@ -1,4 +1,8 @@
 <button (click)="logout()">Déconnexion</button>
+<p>Utilisateur</p>
+<div>
+    <strong>Nom :</strong> {{ user.username }}
+</div>
 <ul *ngFor="let flight of flights">
     <li>
       <!-- Affichage du numéro de vol (flight.flight.number, flight.flight.iata) -->
