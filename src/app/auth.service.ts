@@ -1,5 +1,6 @@
 import { inject, Inject, Injectable } from '@angular/core';
 import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from '@angular/fire/auth';
+import { Router } from '@angular/router';
 import { from, Observable } from 'rxjs';
 
 @Injectable({
@@ -8,12 +9,12 @@ import { from, Observable } from 'rxjs';
 export class AuthService {
 
 private auth = inject(Auth);
-  constructor() { }
+  constructor(private router: Router) { }
 
   signIn(email: string, password: string){
     createUserWithEmailAndPassword(this.auth, email,password ).then((userCredential) => {
       console.log("User created");
-
+      this.router.navigate(['/']);
     
       const user = userCredential.user;
 
@@ -27,7 +28,7 @@ private auth = inject(Auth);
     signInWithEmailAndPassword(this.auth, email, password).then((userCredential) => {
       console.log("User logged in");
       const user = userCredential.user;
-
+      this.router.navigate(['/']);
       alert("User logged in");
 
     }).catch((error) => {
@@ -38,4 +39,13 @@ private auth = inject(Auth);
       
   });
 
-}}
+
+}
+logOut(){
+    this.auth.signOut().then(() => { 
+      console.log("User logged out");
+      alert("User logged out");
+      this.router.navigate(['/login']);
+    })
+}
+}

@@ -11,6 +11,7 @@ import { ApiService } from './api.service';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const firebaseConfig = {
@@ -27,6 +28,7 @@ const firebaseConfig = {
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
