@@ -14,7 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { firebaseConfig } from '../env/env';
-import { VerificationEmailComponent } from './app/verification-email/verification-email.component';
+import { VerificationEmailComponent } from './verification-email/verification-email.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
