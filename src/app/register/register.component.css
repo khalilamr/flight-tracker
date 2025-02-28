@@ -1,3 +1,43 @@
+
+/* Importation de la police depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
+/* Conteneur pour aligner l'image et le texte */
+.title{
+    display: flex;
+    align-items: center;
+    /* Aligne verticalement */
+    justify-content: center;
+    /* Centre horizontalement */
+    gap: 10px;
+    /* Espacement entre l'image et le texte */
+    margin-bottom: 90px;
+        font-family: 'Jim Nightshade', cursive;
+    font-size: 20px;
+    /* Ajuste la taille si nécessaire */
+    font-weight: normal;
+    color: #00251a;
+    /* Couleur du texte */
+    text-align: center;
+    margin-bottom: 90px;
+}
+/* Style de l'image */
+.logo {
+    width: 40px;
+    /* Ajuste la taille de l’image */
+    height: auto;
+}
+/* Style pour CLOUDTRACK */
+ p .cloud{
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 20px;
+    /* Ajuste la taille si nécessaire */
+    font-weight: normal;
+    color: #00251a;
+    /* Couleur du texte */
+    text-align: center;
+    margin-bottom: 90px;
+}
 /* Conteneur principal */
 .container {
     width: 100%;
@@ -49,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 190px;
 }
 
 /* Titre */
