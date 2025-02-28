@@ -46,7 +46,7 @@
    }
    .image-text {
        position: absolute;
-       top: 65%;
+       top: 68%;
        /* Place le texte au centre */
        left: 35%;
        transform: translate(-50%, -50%);
@@ -76,7 +76,7 @@
   }
   .texth {
       position: absolute;
-      top: 82%;
+      top: 85%;
       /* Place le texte au centre */
       left: 35%;
       transform: translate(-50%, -50%);
