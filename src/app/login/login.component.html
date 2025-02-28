@@ -1,19 +1,26 @@
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div>
-        <label for="email">Email</label>
-        <input type="text" name="" id="email" formControlName="email">
+<div class="container">
+           
+    <div class="login-image">
+        <img src="assets/background.webp" alt="Image de connexion">
+        <h1 class="image-text">Suivez tous les vols du <br> monde en toute simplicité</h1>
+        <h4 class="texth">Rejoignez-nous et accédez à des informations précises sur les <br> itinéraires, les horaires, et bien plus encore.</h4>
     </div>
-    <div>
-        <label for="password">Password</label>
-        <input type="password" name="" id="password" formControlName="password">
-    </div>
-    <button type="submit">Login</button>
-    <div class="row">
-        <div class="need">
-            <a href="/signin" style="text-decoration: none;">Besoin d'un compte ? <span>Register</span></a>
+    
+    <div class="login-form">
+        <div class="title">
+            <img src="assets/image.png" alt="Logo" class="logo">
+            <P class="cloud">CLOUDTRACK</P>
         </div>
-        <div class="forg">
-            <a href="/forgot-password" style="text-decoration: none;">Mot de passe oublié</a>
+        <h2>CONNEXION</h2>
+        <p>Pas encore de compte ? <a href="/signin">Inscrivez-vous</a></p>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <input type="email" id="email" formControlName="email" placeholder="Email">
+            <input type="password" id="password" formControlName="password" placeholder="Mot de passe">
+            <button type="submit">Se connecter</button>
+        </form>
+        <div class="links">
+            <a href="/forgot-password">Mot de passe oublié ?</a>
         </div>
     </div>
-</form>
+</div>
