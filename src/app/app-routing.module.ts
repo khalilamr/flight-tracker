@@ -6,6 +6,7 @@ import { redirectUnauthorizedTo, redirectLoggedInTo, canActivate } from '@angula
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { VerificationEmailComponent } from './verification-email/verification-email.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 
@@ -16,6 +17,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent , ...canActivate(redirectLoggedInToDashboard)},
   { path: 'signin', component: RegisterComponent, ...canActivate(redirectLoggedInToDashboard) },
   { path: 'verification-email', component: VerificationEmailComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  
+
 
   // Redirection par défaut : si aucune route n'est spécifiée, on redirige vers le dashboard.
   { path: '', component: DashboardComponent, ...canActivate(redirectUnauthorizedToLogin) },
