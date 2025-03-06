@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './verification-email.component.css'
 })
 export class VerificationEmailComponent {
+  
 
 }

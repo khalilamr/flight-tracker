@@ -48,16 +48,13 @@ export class AuthService {
 
         const usersRef = collection(this.firestore, 'users');
 
-        // ✅ Attendre que Firestore ajoute l'utilisateur avant de continuer
         return addDoc(usersRef, user).then(() => {
           console.log('User created', user);
 
-          // ✅ Attendre l'envoi de l'email de vérification
           return this.sendEmailforVerification(userCredential.user);
         });
       })
       .then(() => {
-        // ✅ Naviguer après que tout soit terminé
         this.router.navigate(['/']);
       })
       .catch((error) => {
@@ -77,10 +74,9 @@ export class AuthService {
 
         this.router.navigate(['/']);
 
-        // 3. Exécuter la requête
         const querySnapshot = await getDocs(q);
 
-        // 4. Extraire les données
+        //  Extraire les données
         const userData = querySnapshot.docs.map((doc) => ({
           ...doc.data(),
         }));
@@ -103,7 +99,6 @@ export class AuthService {
   logOut() {
     this.auth.signOut().then(() => {
       console.log('User logged out');
-      alert('User logged out');
       this.router.navigate(['/login']);
     });
   }

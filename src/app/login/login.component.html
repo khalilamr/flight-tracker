@@ -7,10 +7,11 @@
     </div>
     
     <div class="login-form">
-        <div class="title">
+        <div class="cloudtrack-container">
             <img src="assets/image.png" alt="Logo" class="logo">
-            <P class="cloud">CLOUDTRACK</P>
+            <span class="cloudtrack-login">CLOUDTRACK</span>
         </div>
+        
         <h2>CONNEXION</h2>
         <p>Pas encore de compte ? <a href="/signin">Inscrivez-vous</a></p>
 
@@ -18,9 +19,10 @@
             <input type="email" id="email" formControlName="email" placeholder="Email">
             <input type="password" id="password" formControlName="password" placeholder="Mot de passe">
             <button type="submit">Se connecter</button>
+            <div class="links">
+                <a href="/forgot-password">Mot de passe oublié ?</a>
+            </div>
         </form>
-        <div class="links">
-            <a href="/forgot-password">Mot de passe oublié ?</a>
-        </div>
+    
     </div>
 </div>

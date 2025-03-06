@@ -34,16 +34,36 @@
       /* Ajuste la taille de l’image */
       height: auto;
   }
-   p .cloud {
-       font-family: 'Jim Nightshade', cursive;
-       font-size: 20px;
-       /* Ajuste la taille si nécessaire */
-       font-weight: normal;
-       color: #00251a;
-       /* Couleur du texte */
-       text-align: center;
-       margin-bottom: 200px;
-   }
+ /* Container for logo and CLOUDTRACK */
+ .cloudtrack-container {
+     display: flex;
+     /* Use flexbox */
+     align-items: center;
+     /* Vertically center the items */
+     justify-content: center;
+     /* Horizontally center the items */
+     gap: 10px;
+     /* Space between the image and text */
+     margin-bottom: 90px;
+     /* Keep the margin */
+ }
+
+ /* Style for CLOUDTRACK */
+ .cloudtrack-login {
+     /* Renamed for clarity */
+     font-family: 'Jim Nightshade', cursive;
+     font-size: 20px;
+     font-weight: normal;
+     color: #00251a;
+     text-align: center;
+ }
+
+ /* Style de l'image */
+ .logo {
+     width: 40px;
+     /* Ajuste la taille de l’image */
+     height: auto;
+ }
    .image-text {
        position: absolute;
        top: 68%;
@@ -116,7 +136,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin-bottom: 190px;
+      margin-bottom: 200px;
   }
 
   /* Titre */
@@ -164,8 +184,12 @@
   }
 
   /* Liens supplémentaires */
-  .links {
-      margin-top: -180px;
+   .links {
+      margin-top: 0px;
+      text-align: center;
+     
+      
+      
   }
 
   .links a {

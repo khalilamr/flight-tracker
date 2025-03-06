@@ -27,16 +27,35 @@
     /* Ajuste la taille de l’image */
     height: auto;
 }
-/* Style pour CLOUDTRACK */
- p .cloud{
+/* Container for logo and CLOUDTRACK */
+.cloudtrack-container {
+    display: flex;
+    /* Use flexbox */
+    align-items: center;
+    /* Vertically center the items */
+    justify-content: center;
+    /* Horizontally center the items */
+    gap: 10px;
+    /* Space between the image and text */
+    margin-bottom: 90px;
+    /* Keep the margin */
+}
+
+/* Style for CLOUDTRACK */
+.cloudtrack-login {
+    /* Renamed for clarity */
     font-family: 'Jim Nightshade', cursive;
     font-size: 20px;
-    /* Ajuste la taille si nécessaire */
     font-weight: normal;
     color: #00251a;
-    /* Couleur du texte */
     text-align: center;
-    margin-bottom: 90px;
+}
+
+/* Style de l'image */
+.logo {
+    width: 40px;
+    /* Ajuste la taille de l’image */
+    height: auto;
 }
 /* Conteneur principal */
 .container {
